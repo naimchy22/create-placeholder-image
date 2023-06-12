@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style-type: none;
+}
+
+body{
+	background-color: #f1f2f6;
+	min-height: 100vh;
+}
+
+html {
+	font-size: 10px;
+}
+
+/* common css start */
+.w-50 {
+	width: 68%;
+}
+
+.w-30 {
+	width: 30%;
+}
+/* common css end */
+
+#contatiner {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 85%;
+	height: 80vh;
+	min-height: 400px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px 8px #dfe4ea;
+	padding: 20px;
+}
+
+/* ================== */
+/* = select-styles  = */
+/* ================== */
+.select-styles {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	border: 2px solid #dfe4ea;
+	padding: 10px;
+}
+
+.select-styles h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.select-styles  #textOnImage,
+.select-styles #selectImageSize,
+.select-styles textarea,
+label {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.select-styles #urlPath {
+	resize: none;
+}
+
+
+.select-styles #textOnImage,
+.select-styles #selectImageSize {
+	font-weight: 400;
+}
+
+.select-styles #textOnImage::placeholder {
+	text-transform: capitalize;
+}
+
+.select-styles label {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}
+
+.select-styles #txtColor,
+.select-styles #bgColor {
+	width: 100%;
+	height: 50px;
+	padding: 0;
+}
+
+/* ===================== */
+/* == image css start == */
+/* ===================== */
+
+.image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: scroll;
+	height: 100%;
+	border: 2px solid #dfe4ea;
+}
+
+.image::-webkit-scrollbar {
+	display: none;
+}
+
+
+.image #placeholder-image {
+	font-size: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	color: #b2bec3;
+}

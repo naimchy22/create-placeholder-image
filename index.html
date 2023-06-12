@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive/responsive.css">
+    <title>placeholder image - generator</title>
+</head>
+<body>
+    <div id="contatiner">
+        <div class="content">
+            <section class="w-30 select-styles">
+                <h1>placeholder image path generator</h1>
+                <select name="select-image" id="selectImageSize">
+                    <option value="">select image</option>
+                    <option value="150x50">small (150x50)</option>
+                    <option value="200x200">medium (200x200)</option>
+                    <option value="350x150">medium squre (350x150)</option>
+                    <option value="400x400">large squre (400x400)</option>
+                    <option value="650x350">large (650x350)</option>
+                    <option value="800x600">x-large (800x600)</option>
+                    <option value="1920x1080">full hd (1920x1080)</option>
+                </select>
+                
+                <input type="text" name="text" id="textOnImage" placeholder="text on image">
+                
+                <label for="bgColor">background-color</label>
+                <input type="color" name="bg-color" id="bgColor" value="#192a56">
+
+                <label for="txtColor">text-color</label>
+                <input type="color" name="txt-color" id="txtColor" value="#f5f6fa">
+                
+                <textarea name="url-path" id="urlPath" cols="40" rows="4" placeholder="image url path"></textarea>
+            </section>
+            <section class="w-50  image">
+                <img alt="placeholder-image" id="placeholder-image">
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

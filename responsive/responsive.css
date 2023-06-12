@@ -1,0 +1,66 @@
+@media only screen and (max-width: 810px) {
+    html {
+        font-size: 9px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .select-styles{
+        width: 100%;
+        height: 45%;
+    }
+        
+    .image {
+        width: 100%;
+        height: 54%;
+        scrollbar-width: none;
+    }
+
+    #txtColor,
+    #bgColor {
+        height: 40px;
+    }
+
+    #urlPath {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 7px;
+    }
+    .content {
+        height: 85vh;
+    }
+
+    #txtColor,
+    #bgColor {
+        height: 37px;
+    }
+
+    #urlPath {
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 5px;
+    }
+
+    .content {
+        width: 90vw;
+        height: 95vh;
+    }
+
+    #txtColor,
+    #bgColor,
+    #selectImageSize,
+    #textOnImage,
+    #urlPath {
+        height: 30px;
+    }
+}
